@@ -1,5 +1,5 @@
 import {View, Text, StyleSheet} from 'react-native';
-
+import React, {useState} from 'react';
 
 
 const styles = StyleSheet.create({
@@ -13,9 +13,11 @@ const styles = StyleSheet.create({
 
 export default function App(){
 
+  const [fullname, setFullname] = useState("Neimanas Sarmukas");
+
   return(
     <View>
-      <Text style={styles.paragraph}>Hello, World</Text>
+      <Text style={styles.paragraph}>Hello, World, {fullname}</Text>
     </View>
   )
 };
